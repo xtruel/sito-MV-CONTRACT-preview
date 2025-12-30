@@ -21,41 +21,33 @@
     <meta property="og:type" content="website" />
 
     <link rel="icon" href="/favicon.ico" />
-  <script type="module" crossorigin src="./assets/index-DI_LwdR6.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-_XSSIUab.css">
+  <script type="module" crossorigin src="./assets/index-CwiFakiG.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-HeRLDNbs.css">
 </head>
 
 <body>
-    <!-- Top bar -->
-    <div class="topbar">
-        <div class="container topbar__inner">
-            <div class="topbar__left">
-                <span class="dot"></span>
-                <span>Arredamento Navale • Retail • Yacht</span>
-            </div>
-            <div class="topbar__right">
-                <a class="toplink" href="#contatti">Richiedi una consulenza</a>
-            </div>
-        </div>
-    </div>
-
     <!-- Header -->
     <header class="header" id="home">
         <div class="container header__inner">
             <a class="brand" href="#home" aria-label="Torna alla home">
-                <img src="data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='200'%20height='200'%20rx='40'%20fill='%230E1116'/%3e%3c!--%20M%20--%3e%3cpath%20d='M40%20140V60L75%20100L110%2060V140'%20stroke='%2376c04b'%20stroke-width='12'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c!--%20V%20--%3e%3cpath%20d='M125%2060L145%20140L165%2060'%20stroke='%2376c04b'%20stroke-width='12'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c!--%20Line%20--%3e%3cpath%20d='M40%20160H160'%20stroke='%2376c04b'%20stroke-width='4'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="M Contract S.r.l. logo" class="brand__logo" />
+                <img src="./logo.jpg" alt="MV Contract S.r.l. logo" class="brand__logo" />
                 <div class="brand__text">
                     <strong>MV Contract s.r.l.</strong>
-                    <span>Ship & Building • Turnkey Solutions</span>
+                    <span data-i18n="brand_sub">Ship & Building • Turnkey Solutions</span>
                 </div>
             </a>
 
             <nav class="nav" aria-label="Navigazione principale">
-                <a href="#chi-siamo">Chi siamo</a>
-                <a href="#servizi">Servizi</a>
-                <a href="#processo">Processo</a>
-                <a href="#settori">Settori</a>
-                <a href="#contatti" class="btn btn--small">Contatti</a>
+                <a href="#chi-siamo" data-i18n="nav_about">Chi siamo</a>
+                <a href="#servizi" data-i18n="nav_services">Servizi</a>
+                <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="#processo" data-i18n="nav_process">Processo</a>
+                <a href="#settori" data-i18n="nav_sectors">Settori</a>
+                <div class="lang-switch header-lang">
+                    <button class="lang-btn active" data-lang="it">IT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <a href="#contatti" class="btn btn--small" data-i18n="nav_contact">Contatti</a>
             </nav>
 
             <button class="burger" id="burger" aria-label="Apri menu" aria-expanded="false">
@@ -66,11 +58,16 @@
         <!-- Mobile nav -->
         <div class="mobile" id="mobile" hidden>
             <div class="container mobile__inner">
-                <a href="#chi-siamo">Chi siamo</a>
-                <a href="#servizi">Servizi</a>
-                <a href="#processo">Processo</a>
-                <a href="#settori">Settori</a>
-                <a href="#contatti" class="btn">Contatti</a>
+                <a href="#chi-siamo" data-i18n="nav_about">Chi siamo</a>
+                <a href="#servizi" data-i18n="nav_services">Servizi</a>
+                <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="#processo" data-i18n="nav_process">Processo</a>
+                <a href="#settori" data-i18n="nav_sectors">Settori</a>
+                <div class="lang-switch" style="margin: 10px 0;">
+                    <button class="lang-btn active" data-lang="it">IT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <a href="#contatti" class="btn" data-i18n="nav_contact">Contatti</a>
             </div>
         </div>
     </header>
@@ -81,38 +78,66 @@
             <div class="container hero__grid">
                 <div class="hero__content">
                     <div class="kicker-wrapper">
-                        <span class="kicker">Oltre 20 anni di esperienza</span>
+                        <span class="kicker" data-i18n="hero_kicker">Oltre 20 anni di esperienza</span>
                     </div>
-                    <h1>
+                    <h1 data-i18n="hero_title">
                         Arredamento <span class="accent">Navale</span> e Contract
                         <br />
                         <span class="muted">soluzioni chiavi in mano</span>
                     </h1>
 
-                    <p class="lead">
+                    <p class="lead" data-i18n="hero_lead">
                         Gestiamo e coordiniamo l’intera filiera — dalla preventivazione e budgeting,
                         agli acquisti, disegno tecnico, cantiere e consegna finale — con costi contenuti e tempi
                         ristretti.
                     </p>
 
                     <div class="hero__cta">
-                        <a class="btn" href="#contatti">Richiedi una consulenza</a>
-                        <a class="btn btn--ghost" href="#servizi">Scopri i servizi</a>
+                        <a class="btn" href="#contatti" data-i18n="hero_cta_primary">Inizia il tuo progetto</a>
+                        <a class="btn btn--ghost" href="#servizi" data-i18n="hero_cta_secondary">Scopri i servizi</a>
                     </div>
 
                     <div class="hero__badges">
-                        <div class="badge">Project management</div>
-                        <div class="badge">Outsourcing filiera</div>
-                        <div class="badge">Supervisione tecnica</div>
+                        <div class="badge" data-i18n="badge_pm">Project management</div>
+                        <div class="badge" data-i18n="badge_outsourcing">Outsourcing filiera</div>
+                        <div class="badge" data-i18n="badge_supervision">Supervisione tecnica</div>
                     </div>
                 </div>
 
                 <div class="hero__visual" aria-hidden="true">
-                    <img src="./assets/yacht_interior-hsprRIKI.png" alt="Luxury Yacht Interior by MV Contract" class="hero__image">
+                    <!-- Swiper Carousel -->
+                    <div class="swiper hero-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./luxury_cruise_ship_exterior_1767107816099.png" alt="Luxury Cruise Ship"
+                                    class="hero__image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./cruise_lobby_interior_1767109822922_4_1767109964168.png" alt="Cruise Lobby"
+                                    class="hero__image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./nautical_interior_lounge_1767107835139.png" alt="Luxury Yacht Interior"
+                                    class="hero__image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./yacht_bedroom_detail_1767109822922_5_1767109979823.png" alt="Yacht Bedroom"
+                                    class="hero__image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./cruise_ship.png" alt="Cruise Ship" class="hero__image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./yacht_interior.png" alt="Yacht Detail" class="hero__image">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
                     <div class="panel">
-                        <div class="panel__title">Focus</div>
-                        <div class="panel__big">Chiavi in mano</div>
-                        <p class="panel__text">
+                        <div class="panel__title" data-i18n="panel_focus">Focus</div>
+                        <div class="panel__big" data-i18n="panel_title">Chiavi in mano</div>
+                        <p class="panel__text" data-i18n="panel_text">
                             Ship & Building: Riduciamo la complessità operativa per risultati solidi e consegne
                             puntuali.
                         </p>
@@ -126,8 +151,8 @@
         <section class="section" id="chi-siamo">
             <div class="container">
                 <div class="section__head">
-                    <h2 class="reveal">Chi siamo</h2>
-                    <p class="reveal">
+                    <h2 class="reveal" data-i18n="about_title">Chi siamo</h2>
+                    <p class="reveal" data-i18n="about_intro">
                         Siamo un partner operativo e tecnico per il settore arredamento navale e contract,
                         con una specializzazione concreta: <strong>gestione completa “chiavi in mano”</strong>.
                     </p>
@@ -135,8 +160,8 @@
 
                 <div class="grid-2">
                     <div class="card reveal delay-1">
-                        <h3>Visione pratica, controllo reale</h3>
-                        <p>
+                        <h3 data-i18n="about_card1_title">Visione pratica, controllo reale</h3>
+                        <p data-i18n="about_card1_text">
                             Grazie all’esperienza acquisita negli anni, gestiamo e monitoriamo commesse e progetti
                             riducendo tempi e costi, alleggerendo anche la ricerca, formazione e produttività del
                             personale.
@@ -144,8 +169,8 @@
                     </div>
 
                     <div class="card reveal delay-2">
-                        <h3>Un team che si integra</h3>
-                        <p>
+                        <h3 data-i18n="about_card2_title">Un team che si integra</h3>
+                        <p data-i18n="about_card2_text">
                             Mettiamo a disposizione figure esperte per supporto e formazione, affiancando il vostro
                             personale
                             e intervenendo dove serve: coordinamento, procedure, controllo qualità, avanzamento.
@@ -155,12 +180,61 @@
             </div>
         </section>
 
+        <!-- Falegnameria -->
+        <section class="section section--alt" id="falegnameria">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="reveal">
+                        <h2 data-i18n="carpentry_title">Eccellenza in Falegnameria</h2>
+                        <p class="lead" data-i18n="carpentry_lead">
+                            Costruiamo interni di lusso con arredi su misura e non solo, partendo dalle vostre idee.
+                        </p>
+                        <p data-i18n="carpentry_text">
+                            Disponiamo di un'ampia falegnameria con annessa sala verniciatura interna per ridurre i
+                            tempi di attesa e garantire un controllo qualitativo totale su ogni finitura.
+                        </p>
+                        <div class="hero__badges" style="margin-top: 24px;">
+                            <div class="badge" data-i18n="badge_custom">Arredi su misura</div>
+                            <div class="badge" data-i18n="badge_painting">Sala verniciatura interna</div>
+                            <div class="badge" data-i18n="badge_luxury">Luxury Finish</div>
+                        </div>
+                    </div>
+                    <div class="reveal delay-1">
+                        <div class="hero__visual" style="height: 400px;">
+                            <div class="swiper carpentry-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./factory_view_luxury_wood_1767109822922_6_1767109993923.png"
+                                            alt="Factory View" class="hero__image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./luxury_carpentry_1767109822922_111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111_1767110022983.png"
+                                            alt="Carpentry Working" class="hero__image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./luxury_carpentry_1767109822922_222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222_1767110038668.png"
+                                            alt="Luxury Detail" class="hero__image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./painting_room_luxury_1767109822922_333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333_1767110055351.png"
+                                            alt="Painting Room" class="hero__image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Servizi -->
-        <section class="section section--alt" id="servizi">
+        <section class="section" id="servizi">
             <div class="container">
                 <div class="section__head">
-                    <h2 class="reveal">I nostri servizi</h2>
-                    <p class="reveal">Consulenza e gestione a 360° nell’arredamento navale, retail e yacht.</p>
+                    <h2 class="reveal" data-i18n="services_title">I nostri servizi</h2>
+                    <p class="reveal" data-i18n="services_subtitle">Gestione di ogni fase del processo per un risultato
+                        a 360°.</p>
                 </div>
 
                 <div class="cards">
@@ -171,17 +245,17 @@
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                             </svg>
                         </div>
-                        <h3>Gestione & consulenza 360°</h3>
-                        <p>
+                        <h3 data-i18n="service1_title">Gestione & consulenza 360°</h3>
+                        <p data-i18n="service1_text">
                             Dalla preventivazione a OVS, budgeting, acquisti, disegno tecnico, gestione cantiere,
                             fino alla consegna finale.
                         </p>
-                        <ul>
+                        <ul data-i18n="service1_list">
                             <li>Preventivazione e pianificazione</li>
                             <li>OVS / budgeting</li>
                             <li>Acquisti e supply</li>
                             <li>Disegno tecnico</li>
-                            <li>Site management</li>
+                            <li>Site management, consegna e garanzia</li>
                         </ul>
                     </article>
 
@@ -195,15 +269,15 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                             </svg>
                         </div>
-                        <h3>Gestione aziendale & personale</h3>
-                        <p>
-                            Coordinamento aziendale e risorse necessarie al corretto sviluppo delle commesse,
-                            incluso reparto produttivo.
+                        <h3 data-i18n="service2_title">Mantenimento & Refitting</h3>
+                        <p data-i18n="service2_text">
+                            Forniture e assistenza per il mantenimento delle flotte durante la normale operatività,
+                            oltre a interventi di refitting completi.
                         </p>
-                        <ul>
-                            <li>Organizzazione delle risorse</li>
-                            <li>Gestione turni e priorità</li>
-                            <li>Coordinamento produzione</li>
+                        <ul data-i18n="service2_list">
+                            <li>Assistenza flotte in operatività</li>
+                            <li>Interventi di refitting</li>
+                            <li>Forniture rapide</li>
                         </ul>
                     </article>
 
@@ -215,8 +289,8 @@
                                 <polyline points="22 4 12 14.01 9 11.01" />
                             </svg>
                         </div>
-                        <h3>Supporto e formazione</h3>
-                        <p>
+                        <h3 data-i18n="service3_title">Supporto e formazione</h3>
+                        <p data-i18n="service3_text">
                             Team di esperti nelle diverse mansioni per supportare e formare il vostro personale,
                             migliorando autonomia e performance.
                         </p>
@@ -236,8 +310,8 @@
                                 <line x1="12" y1="16" x2="12.01" y2="16" />
                             </svg>
                         </div>
-                        <h3>Supervisione tecnica & outsourcing</h3>
-                        <p>
+                        <h3 data-i18n="service4_title">Supervisione tecnica & outsourcing</h3>
+                        <p data-i18n="service4_text">
                             Supervisione delle mansioni e servizi in outsourcing dell’intera filiera:
                             dal Project Management alle aziende di installazione.
                         </p>
@@ -251,44 +325,81 @@
             </div>
         </section>
 
+        <!-- Portfolio -->
+        <section class="section section--alt" id="portfolio">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="reveal" data-i18n="portfolio_title">Portfolio</h2>
+                    <p class="reveal" data-i18n="portfolio_subtitle">Collaborazioni con i leader del settore
+                        crocieristico e navale.</p>
+                </div>
+
+                <div class="pillgrid">
+                    <div class="pill reveal">
+                        <h3>Wilhelmsen Ship Management</h3>
+                    </div>
+                    <div class="pill reveal delay-1">
+                        <h3>Fincantieri</h3>
+                    </div>
+                    <div class="pill reveal delay-2">
+                        <h3>Viking Cruises</h3>
+                    </div>
+                    <div class="pill reveal delay-3">
+                        <h3>Cunard</h3>
+                    </div>
+                    <div class="pill reveal delay-4">
+                        <h3>Norwegian Cruise Line Holdings Ltd</h3>
+                    </div>
+                    <div class="pill reveal delay-5">
+                        <h3 data-i18n="portfolio_others">...e altre realtà del mondo Cruise</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Processo -->
         <section class="section" id="processo">
             <div class="container">
                 <div class="section__head">
-                    <h2 class="reveal">Come lavoriamo</h2>
-                    <p class="reveal">Un flusso chiaro, controllato e misurabile, per consegne puntuali.</p>
+                    <h2 class="reveal" data-i18n="process_title">Come lavoriamo</h2>
+                    <p class="reveal" data-i18n="process_subtitle">Un flusso chiaro, controllato e misurabile, per
+                        consegne puntuali.</p>
                 </div>
 
                 <ol class="steps">
                     <li class="step reveal">
                         <span class="step__num">1</span>
                         <div>
-                            <h3>Analisi & preventivazione</h3>
-                            <p>Raccolta requisiti, stime, OVS, budgeting e definizione piano operativo.</p>
+                            <h3 data-i18n="step1_title">Analisi & preventivazione</h3>
+                            <p data-i18n="step1_text">Raccolta requisiti, stime, OVS, budgeting e definizione piano
+                                operativo.</p>
                         </div>
                     </li>
 
                     <li class="step reveal">
                         <span class="step__num">2</span>
                         <div>
-                            <h3>Acquisti & disegno tecnico</h3>
-                            <p>Supply, componenti, disegni e dettaglio tecnico per produzione e cantiere.</p>
+                            <h3 data-i18n="step2_title">Acquisti & disegno tecnico</h3>
+                            <p data-i18n="step2_text">Supply, componenti, disegni e dettaglio tecnico per produzione e
+                                cantiere.</p>
                         </div>
                     </li>
 
                     <li class="step reveal">
                         <span class="step__num">3</span>
                         <div>
-                            <h3>Gestione cantiere</h3>
-                            <p>Coordinamento squadre, supervisione tecnica, riconcilio tempi e costi.</p>
+                            <h3 data-i18n="step3_title">Gestione cantiere</h3>
+                            <p data-i18n="step3_text">Coordinamento squadre, supervisione tecnica, riconcilio tempi e
+                                costi.</p>
                         </div>
                     </li>
 
                     <li class="step reveal">
                         <span class="step__num">4</span>
                         <div>
-                            <h3>Consegna & chiusura</h3>
-                            <p>Verifiche, qualità, documentazione e consegna finale nei tempi concordati.</p>
+                            <h3 data-i18n="step4_title">Consegna & supporto in garanzia</h3>
+                            <p data-i18n="step4_text">Verifiche, qualità, documentazione e consegna finale nei tempi
+                                concordati con supporto post-vendita.</p>
                         </div>
                     </li>
                 </ol>
@@ -299,34 +410,37 @@
         <section class="section section--alt" id="settori">
             <div class="container">
                 <div class="section__head">
-                    <h2 class="reveal">Settori</h2>
-                    <p class="reveal">Esperienza trasversale con focus su ambienti complessi e tempi ristretti.</p>
+                    <h2 class="reveal" data-i18n="sectors_title">Settori</h2>
+                    <p class="reveal" data-i18n="sectors_subtitle">Esperienza trasversale con focus su ambienti
+                        complessi e tempi ristretti.</p>
                 </div>
 
                 <div class="pillgrid">
                     <div class="pill reveal">
-                        <h3>Navale</h3>
-                        <p>Allestimenti, refit, gestione cantiere e coordinamento forniture.</p>
+                        <h3 data-i18n="sector1_title">Navale</h3>
+                        <p data-i18n="sector1_text">Allestimenti, refit, gestione cantiere e coordinamento forniture.
+                        </p>
                     </div>
                     <div class="pill reveal delay-1">
-                        <h3>Yacht</h3>
-                        <p>Finiture, installazioni, controllo qualità e consegna puntuale.</p>
+                        <h3 data-i18n="sector2_title">Yacht</h3>
+                        <p data-i18n="sector2_text">Finiture, installazioni, controllo qualità e consegna puntuale.</p>
                     </div>
                     <div class="pill reveal delay-2">
-                        <h3>Retail</h3>
-                        <p>Allestimenti e commesse multi-sito, rapidità e standard coerenti.</p>
+                        <h3 data-i18n="sector3_title">Retail</h3>
+                        <p data-i18n="sector3_text">Allestimenti e commesse multi-sito, rapidità e standard coerenti.
+                        </p>
                     </div>
                 </div>
 
                 <div class="cta-strip reveal">
                     <div>
-                        <h3>Obiettivo: ridurre complessità e costi</h3>
-                        <p>
+                        <h3 data-i18n="cta_strip_title">Obiettivo: ridurre complessità e costi</h3>
+                        <p data-i18n="cta_strip_text">
                             Gestione e monitoraggio delle commesse con metodo, supporto operativo e soluzioni
                             scalabili: più risultati, meno stress.
                         </p>
                     </div>
-                    <a class="btn" href="#contatti">Parliamone</a>
+                    <a class="btn" href="#contatti" data-i18n="cta_strip_btn">Parliamone</a>
                 </div>
             </div>
         </section>
@@ -335,41 +449,47 @@
         <section class="section" id="contatti">
             <div class="container">
                 <div class="section__head">
-                    <h2 class="reveal">Contatti</h2>
-                    <p class="reveal">Scrivici per una prima call: ti rispondiamo con una proposta chiara e operativa.
+                    <h2 class="reveal" data-i18n="contact_title">Contatti</h2>
+                    <p class="reveal" data-i18n="contact_subtitle">Scrivici per una prima call: ti rispondiamo con una
+                        proposta chiara e operativa.
                     </p>
                 </div>
 
                 <div class="grid-2">
                     <div class="card reveal">
-                        <h3>Richiedi una consulenza</h3>
-                        <p class="muted">
+                        <h3 data-i18n="contact_form_title">Inizia il tuo progetto</h3>
+                        <p class="muted" data-i18n="contact_form_subtitle">
                             Inserisci i tuoi riferimenti e una breve descrizione.
                         </p>
 
                         <form id="contactForm" class="form">
                             <div class="form-group">
-                                <label for="name">Nome e Cognome</label>
+                                <label for="name" data-i18n="label_name">Nome e Cognome</label>
                                 <input id="name" name="name" type="text" placeholder="Es. Mario Rossi" required />
                             </div>
 
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="email" data-i18n="label_email">Email</label>
                                 <input id="email" name="email" type="email" placeholder="nome@azienda.it" required />
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Messaggio</label>
+                                <label for="phone" data-i18n="label_phone">Telefono</label>
+                                <input id="phone" name="phone" type="tel" placeholder="+39 ..." />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-i18n="label_message">Messaggio</label>
                                 <textarea id="message" name="message" rows="5" placeholder="Di cosa hai bisogno?"
                                     required></textarea>
                             </div>
 
-                            <button class="btn" type="submit">Invia richiesta</button>
+                            <button class="btn" type="submit" data-i18n="btn_send">Invia richiesta</button>
                             <p class="form__hint" id="formHint" role="status" aria-live="polite"></p>
                         </form>
 
                         <div class="quick">
-                            <a class="btn btn--ghost" href="mailto:info@mcontract.it">
+                            <a class="btn btn--ghost" href="mailto:info@mvcontract.it">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path
@@ -378,35 +498,26 @@
                                 </svg>
                                 Email
                             </a>
-                            <a class="btn btn--ghost" href="tel:+390000000000">
+                            <a class="btn btn--ghost" href="tel:+393XXXXXXXXX">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path
                                         d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                                 </svg>
-                                Telefono
+                                Mobile
                             </a>
                         </div>
                     </div>
 
                     <div class="card card--dark reveal">
-                        <h3>Approfondisci</h3>
-                        <p class="muted">
-                            Riferimenti storici e social dell'azienda.
+                        <h3 data-i18n="info_title">Approfondisci</h3>
+                        <p class="muted" data-i18n="info_subtitle">
+                            Riferimenti storici dell'azienda.
                         </p>
                         <div class="links">
                             <a target="_blank" rel="noreferrer" href="https://www.navalinterior.it/servizi/"
                                 class="external-link">
-                                <span>Servizi (riferimento)</span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="7" y1="17" x2="17" y2="7" />
-                                    <polyline points="7 7 17 7 17 17" />
-                                </svg>
-                            </a>
-                            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/share/1CLZM3LYTX/"
-                                class="external-link">
-                                <span>Facebook azienda</span>
+                                <span data-i18n="link_services">Servizi (riferimento)</span>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="7" y1="17" x2="17" y2="7" />
@@ -417,20 +528,16 @@
 
                         <div class="note info-grid">
                             <div class="info-block">
-                                <h4>Sede Legale</h4>
+                                <h4 data-i18n="office_legal">Sede Legale & Operativa</h4>
                                 <p>Via Bagaron 29/C<br>Campalto (VE) 30173 Italy</p>
                             </div>
                             <div class="info-block">
-                                <h4>Sede Operativa</h4>
-                                <p>Via Delle Industrie 2 int.8<br>Marcon (VE) 30020 Italy</p>
+                                <h4 data-i18n="office_contacts">Contatti</h4>
+                                <p>T. +39 3XXXXXXXXX<br>E. info@mvcontract.it</p>
                             </div>
                             <div class="info-block">
-                                <h4>Contatti</h4>
-                                <p>T. +39 0418894269<br>F. +39 0410991569</p>
-                            </div>
-                            <div class="info-block">
-                                <h4>Email</h4>
-                                <p>info@mvcontract.it<br>mvcontract@pec.it</p>
+                                <h4 data-i18n="office_email">Email Certificata</h4>
+                                <p>mvcontract@pec.it</p>
                             </div>
                         </div>
                     </div>
@@ -442,24 +549,27 @@
     <footer class="footer">
         <div class="container footer__inner">
             <div class="footer__brand">
-                <img src="data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='200'%20height='200'%20rx='40'%20fill='%230E1116'/%3e%3c!--%20M%20--%3e%3cpath%20d='M40%20140V60L75%20100L110%2060V140'%20stroke='%2376c04b'%20stroke-width='12'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c!--%20V%20--%3e%3cpath%20d='M125%2060L145%20140L165%2060'%20stroke='%2376c04b'%20stroke-width='12'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c!--%20Line%20--%3e%3cpath%20d='M40%20160H160'%20stroke='%2376c04b'%20stroke-width='4'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="M Contract S.r.l. logo" />
+                <img src="./logo.jpg" alt="MV Contract S.r.l. logo"
+                    style="height: 60px; width: auto; border-radius: 8px;" />
                 <div>
                     <strong>MV Contract s.r.l.</strong>
-                    <p>Ship & Building — Arredamento Navale • Retail • Yacht</p>
+                    <p data-i18n="footer_text">Ship & Building — Arredamento Navale • Retail • Yacht</p>
                 </div>
             </div>
 
             <div class="footer__links">
-                <a href="#chi-siamo">Chi siamo</a>
-                <a href="#servizi">Servizi</a>
-                <a href="#processo">Processo</a>
-                <a href="#settori">Settori</a>
-                <a href="#contatti">Contatti</a>
+                <a href="#chi-siamo" data-i18n="nav_about">Chi siamo</a>
+                <a href="#servizi" data-i18n="nav_services">Servizi</a>
+                <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="#processo" data-i18n="nav_process">Processo</a>
+                <a href="#settori" data-i18n="nav_sectors">Settori</a>
+                <a href="#contatti" data-i18n="nav_contact">Contatti</a>
             </div>
         </div>
 
         <div class="container footer__bottom">
-            <span>© <span id="year"></span> MV Contract s.r.l. — Tutti i diritti riservati</span>
+            <span>© <span id="year"></span> MV Contract s.r.l. — <span data-i18n="footer_rights">Tutti i diritti
+                    riservati</span></span>
             <span class="muted">Design & Engineering by MV Contract</span>
         </div>
     </footer>
