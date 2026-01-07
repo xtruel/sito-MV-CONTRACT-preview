@@ -234,17 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const isExpanded = open !== undefined ? open : burger.getAttribute("aria-expanded") === "false";
         burger.setAttribute("aria-expanded", String(isExpanded));
         mobile.classList.toggle('active', isExpanded);
-
-        const spans = burger.querySelectorAll('span');
-        if (isExpanded) {
-            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-            spans[1].style.opacity = '0';
-            spans[2].style.transform = 'rotate(-45deg) translate(7px, -7px)';
-        } else {
-            spans[0].style.transform = 'none';
-            spans[1].style.opacity = '1';
-            spans[2].style.transform = 'none';
-        }
     };
 
     burger?.addEventListener("click", () => toggleMobile());

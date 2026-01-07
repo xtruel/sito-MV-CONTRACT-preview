@@ -228,6 +228,10 @@ main {
   text-decoration: none;
 }
 
+.brand__text {
+  min-width: 0;
+}
+
 .brand__logo {
   height: 54px;
   width: auto;
@@ -239,10 +243,12 @@ main {
 
 .brand__text strong {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.1;
   color: var(--text);
   -webkit-text-stroke: 0.6px var(--brand-outline);
   text-shadow: 0 0 14px var(--brand-glow);
+  letter-spacing: 0.04em;
 }
 
 .brand__text span {
@@ -427,8 +433,8 @@ main {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: none;
+  box-shadow: 0 6px 16px rgba(11, 18, 32, 0.12);
 }
 
 .btn--small {
@@ -593,7 +599,7 @@ main {
 }
 
 .cta-strip {
-  background: linear-gradient(90deg, #12161b 0%, #0e1116 100%);
+  background: linear-gradient(90deg, rgba(14, 165, 233, 0.14) 0%, rgba(37, 99, 235, 0.1) 100%);
   border: 1px solid var(--line);
   padding: 40px;
   border-radius: var(--radius);
@@ -601,6 +607,10 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+}
+
+.cta-strip p {
+  color: var(--muted);
 }
 
 /* Form */
@@ -764,7 +774,7 @@ textarea:focus {
   height: 2px;
   background: var(--text);
   margin: 5px 0;
-  transition: var(--transition);
+  transition: none;
 }
 
 .mobile {
