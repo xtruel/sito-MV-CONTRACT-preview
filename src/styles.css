@@ -168,6 +168,15 @@ main {
   align-items: center;
 }
 
+.carpentry-swiper .hero__image {
+  opacity: 1;
+  filter: none;
+}
+
+.carpentry-swiper .swiper-slide {
+  opacity: 1;
+}
+
 /* Service List */
 .service ul {
   list-style: none;
