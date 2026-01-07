@@ -4,5 +4,5 @@
         stroke="white" stroke-width="24" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
   <!-- Chevron Shape -->
   <path d="M70 120 L100 170 L130 120" 
-        stroke="#76c04b" stroke-width="24" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
+        stroke="#0ea5e9" stroke-width="24" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
 </svg>

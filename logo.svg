@@ -1,9 +1,8 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="200" rx="40" fill="#0E1116"/>
-  <!-- M -->
-  <path d="M40 140V60L75 100L110 60V140" stroke="#76c04b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- V -->
-  <path d="M125 60L145 140L165 60" stroke="#76c04b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Line -->
-  <path d="M40 160H160" stroke="#76c04b" stroke-width="4" stroke-linecap="round"/>
+<svg width="640" height="240" viewBox="0 0 640 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M80 120 L120 40 L160 104 L200 40 L240 120" stroke="#0b0f14" stroke-width="28"
+    stroke-linecap="butt" stroke-linejoin="miter" fill="none" />
+  <path d="M120 144 L160 204 L200 144" stroke="#0ea5e9" stroke-width="28"
+    stroke-linecap="butt" stroke-linejoin="miter" fill="none" />
+  <text x="292" y="146" font-family="Outfit, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+    font-size="38" font-style="italic" letter-spacing="2" fill="#0b0f14">MV CONTRACT S.R.L.</text>
 </svg>
