@@ -744,6 +744,7 @@ textarea:focus {
   padding: 80px 0 40px;
   background: #050608;
   border-top: 1px solid var(--line);
+  color: #ffffff;
 }
 
 .footer__inner {
@@ -753,8 +754,16 @@ textarea:focus {
 }
 
 .footer__brand img {
-  height: 40px;
+  height: 50px;
   margin-bottom: 16px;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.footer__brand p,
+.footer__brand strong {
+  color: #ffffff;
 }
 
 .footer__links {
@@ -764,7 +773,7 @@ textarea:focus {
 
 .footer__links a {
   text-decoration: none;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.7);
   transition: var(--transition);
 }
 
@@ -774,11 +783,11 @@ textarea:focus {
 
 .footer__bottom {
   padding-top: 40px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Burger Menu */
