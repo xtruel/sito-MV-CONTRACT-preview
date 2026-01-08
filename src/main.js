@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const swiperCarpentry = new Swiper('.carpentry-swiper', {
+    const swiperCarpentry = new Swiper('#carpentrySwiper', {
         modules: [Pagination, Autoplay],
         loop: true,
         observer: true,

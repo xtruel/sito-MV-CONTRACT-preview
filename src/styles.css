@@ -169,21 +169,28 @@ main {
   align-items: center;
 }
 
-.carpentry-swiper .hero__image {
-  opacity: 1 !important;
-  filter: none !important;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+.carpentry-visual {
+  position: relative;
+  height: 400px;
+  /* Fixed height for consistency */
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  background: #fdfaf7;
+  /* High quality wood fallback background */
+}
+
+#carpentrySwiper {
   width: 100%;
   height: 100%;
 }
 
-.carpentry-swiper .swiper-slide {
-  opacity: 1 !important;
-  background: #fdfaf7;
-  /* Fallback wood-like color */
+.carpentry-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Service List */
