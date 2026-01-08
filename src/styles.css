@@ -245,9 +245,9 @@ main {
   height: 48px;
   width: auto;
   object-fit: contain;
-  background: transparent;
-  padding: 0;
-  border-radius: 0;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 6px;
 }
 
 .brand__text strong {
