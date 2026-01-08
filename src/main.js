@@ -245,6 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.hero-swiper', {
         modules: [Pagination, Autoplay],
         loop: true,
+        observer: true,
+        observeParents: true,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -262,6 +264,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiperCarpentry = new Swiper('.carpentry-swiper', {
         modules: [Pagination, Autoplay],
         loop: true,
+        observer: true,
+        observeParents: true,
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
@@ -270,6 +274,11 @@ document.addEventListener('DOMContentLoaded', () => {
             el: '.swiper-pagination',
             clickable: true,
         }
+    });
+
+    // Force refresh on load to fix layout issues
+    window.addEventListener('load', () => {
+        window.dispatchEvent(new Event('resize'));
     });
 
     // Reveal Animations on Scroll
