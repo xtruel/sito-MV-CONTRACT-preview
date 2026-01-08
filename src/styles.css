@@ -242,7 +242,7 @@ main {
 }
 
 .brand__logo {
-  height: 54px;
+  height: 48px;
   width: auto;
   object-fit: contain;
   background: transparent;
@@ -252,17 +252,16 @@ main {
 
 .brand__text strong {
   display: block;
-  font-size: 1.05rem;
-  line-height: 1.1;
+  font-size: 1.3rem;
+  line-height: 1.2;
   color: var(--text);
-  -webkit-text-stroke: 0.6px var(--brand-outline);
-  text-shadow: 0 0 14px var(--brand-glow);
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .brand__text span {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
