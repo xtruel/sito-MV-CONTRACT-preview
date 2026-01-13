@@ -239,6 +239,83 @@ main {
   overflow: hidden;
 }
 
+/* Simple Gallery */
+.gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.gallery__img.active {
+  opacity: 1;
+}
+
+.gallery__dots {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.gallery__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery__dot.active {
+  background: var(--accent);
+  transform: scale(1.2);
+}
+
+.gallery__dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Carpentry Visual */
+.carpentry-visual {
+  position: relative;
+  height: 400px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000;
+}
+
+.carpentry-visual .gallery__dots {
+  bottom: 20px;
+}
+
+/* Flag Images */
+.flag-img {
+  width: 24px;
+  height: 18px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+  gap: 12px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
 .carpentry-img {
   width: 100%;
   height: 200px;
