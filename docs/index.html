@@ -20,9 +20,10 @@
         content="Specialisti chiavi in mano: arredamento navale, yacht e retail. Project management, acquisti, disegno tecnico, cantiere, consegna." />
     <meta property="og:type" content="website" />
 
-    <link rel="icon" href="/favicon.ico" />
-  <script type="module" crossorigin src="./assets/index-ClGWIA6b.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CAI8mwvq.css">
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+  <script type="module" crossorigin src="./assets/index-1768317937647.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-1768317937647.css">
 </head>
 
 <body>
@@ -31,10 +32,6 @@
         <div class="container header__inner">
             <a class="brand" href="#home" aria-label="Torna alla home">
                 <img src="logo.png" alt="MV Contract s.r.l." class="brand__logo" />
-                <div class="brand__text">
-                    <strong>MV CONTRACT S.R.L.</strong>
-                    <span data-i18n="brand_sub">Ship & Building • Turnkey Solutions</span>
-                </div>
             </a>
 
             <nav class="nav" aria-label="Navigazione principale">
@@ -44,8 +41,15 @@
                 <a href="#processo" data-i18n="nav_process">Processo</a>
                 <a href="#settori" data-i18n="nav_sectors">Settori</a>
                 <div class="lang-switch header-lang">
-                    <button class="lang-btn active" data-lang="it">IT</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="en" title="Switch to English" id="lang-en">
+                        <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English"
+                            style="width: 20px; height: auto;">
+                    </button>
+                    <button class="lang-btn" data-lang="it" title="Passa all'italiano" id="lang-it"
+                        style="display: none;">
+                        <img src="https://flagicons.lipis.dev/flags/4x3/it.svg" alt="Italiano"
+                            style="width: 20px; height: auto;">
+                    </button>
                 </div>
                 <a href="#contatti" class="btn btn--small" data-i18n="nav_contact">Contatti</a>
             </nav>
@@ -109,6 +113,9 @@
                     <div class="swiper hero-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
+                                <img src="ls012.png" alt="Nautical Interior Design" class="hero__image">
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="./luxury_cruise_ship_exterior_1767107816099.png" alt="Luxury Cruise Ship"
                                     class="hero__image">
                             </div>
@@ -125,13 +132,15 @@
                                     class="hero__image">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/cruise_ship-BlADoh6I.png" alt="Cruise Ship" class="hero__image">
+                                <img src="./assets/cruise_ship-1768317937647.png" alt="Cruise Ship" class="hero__image">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/yacht_interior-hsprRIKI.png" alt="Yacht Detail" class="hero__image">
+                                <img src="./assets/yacht_interior-1768317937647.png" alt="Yacht Detail" class="hero__image">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
 
                     <div class="panel">
@@ -200,11 +209,28 @@
                         </div>
                     </div>
                     <div>
-                        <div class="carpentry-gallery">
-                            <img src="carpentry_workshop_1.png" alt="Laboratorio Falegnameria" class="carpentry-img">
-                            <img src="carpentry_detail_2.png" alt="Dettaglio Lavorazione" class="carpentry-img">
-                            <img src="carpentry_finished_3.png" alt="Mobili Finiti" class="carpentry-img">
-                            <img src="carpentry_painting_4.png" alt="Dettagli Legno" class="carpentry-img">
+                        <div class="hero__visual carpentry-swiper-container" style="height: 400px; margin-top: 0;">
+                            <div class="swiper carpentry-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="carpentry_workshop_1.png" alt="Laboratorio Falegnameria"
+                                            class="hero__image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="carpentry_detail_2.png" alt="Dettaglio Lavorazione"
+                                            class="hero__image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="carpentry_finished_3.png" alt="Mobili Finiti" class="hero__image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="carpentry_painting_4.png" alt="Dettagli Legno" class="hero__image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -317,21 +343,27 @@
                         crocieristico e navale.</p>
                 </div>
 
-                <div class="pillgrid">
+                <div class="pillgrid logos-grid">
                     <div class="pill reveal">
-                        <h3>Wilhelmsen Ship Management</h3>
+                        <img src="https://www.wilhelmsen.com/globalassets/logo/wilhelmsen_logo.svg" alt="Wilhelmsen"
+                            class="partner-logo">
                     </div>
                     <div class="pill reveal delay-1">
-                        <h3>Fincantieri</h3>
+                        <img src="https://www.fincantieri.com/siteassets/fincantieri_small.png" alt="Fincantieri"
+                            class="partner-logo">
                     </div>
                     <div class="pill reveal delay-2">
-                        <h3>Viking Cruises</h3>
+                        <img src="https://vikingcruises.com/favicon.ico" alt="Viking Cruises" class="partner-logo"
+                            style="filter: grayscale(1) invert(1);">
+                        <span style="font-weight: 700;">VIKING</span>
                     </div>
                     <div class="pill reveal delay-3">
-                        <h3>Cunard</h3>
+                        <img src="https://www.cunard.com/etc.clientlibs/carnival-uk/cunard/clientlibs/clientlib-site/resources/images/cunard-logo.png"
+                            alt="Cunard" class="partner-logo">
                     </div>
                     <div class="pill reveal delay-4">
-                        <h3>Norwegian Cruise Line Holdings Ltd</h3>
+                        <img src="https://www.ncl.com/favicon.ico" alt="Norwegian Cruise Line" class="partner-logo">
+                        <span style="font-weight: 700;">NCL</span>
                     </div>
                     <div class="pill reveal delay-5">
                         <h3 data-i18n="portfolio_others">...e altre realtà del mondo Cruise</h3>
@@ -501,8 +533,8 @@
 
                         <div class="note info-grid">
                             <div class="info-block">
-                                <h4 data-i18n="office_legal">Sede Legale & Operativa</h4>
-                                <p>Via Bagaron 29/C<br>Campalto (VE) 30173 Italy</p>
+                                <h4 data-i18n="office_legal">Sede Legale</h4>
+                                <p>Via Delle Industrie 2<br>Marcon (VE) 30020 Italy</p>
                             </div>
                             <div class="info-block">
                                 <h4 data-i18n="office_contacts">Contatti</h4>
@@ -523,12 +555,7 @@
         <div class="container footer__inner">
             <div class="footer__brand">
                 <img src="logo.png" alt="MV Contract s.r.l."
-                    style="height: 50px; width: auto; background: #ffffff; padding: 8px; border-radius: 10px;" />
-                <div style="color: #ffffff;">
-                    <strong style="color: #ffffff; font-size: 1.1rem;">MV CONTRACT S.R.L.</strong>
-                    <p data-i18n="footer_text" style="color: rgba(255, 255, 255, 0.8); margin: 8px 0 0 0;">Ship &
-                        Building — Arredamento Navale • Retail • Yacht</p>
-                </div>
+                    style="height: 60px; width: auto; background: #ffffff; padding: 4px; border-radius: 6px;" />
             </div>
 
             <div class="footer__links">
@@ -545,7 +572,7 @@
             <span style="color: rgba(255, 255, 255, 0.6);">© <span id="year"></span> MV Contract s.r.l. — <span
                     data-i18n="footer_rights">Tutti i diritti
                     riservati</span></span>
-            <span style="color: rgba(255, 255, 255, 0.5);">Design & Engineering by MV Contract</span>
+            <span style="color: rgba(255, 255, 255, 0.5);">Design & Engineering by MV Contract — v2.1.2</span>
         </div>
     </footer>
 
