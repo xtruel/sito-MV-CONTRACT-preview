@@ -1,8 +1,8 @@
-<svg width="640" height="240" viewBox="0 0 640 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M80 120 L120 40 L160 104 L200 40 L240 120" stroke="#0b0f14" stroke-width="28"
-    stroke-linecap="butt" stroke-linejoin="miter" fill="none" />
-  <path d="M120 144 L160 204 L200 144" stroke="#0ea5e9" stroke-width="28"
-    stroke-linecap="butt" stroke-linejoin="miter" fill="none" />
-  <text x="292" y="146" font-family="Outfit, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
-    font-size="38" font-style="italic" letter-spacing="2" fill="#0b0f14">MV CONTRACT S.R.L.</text>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- M Shape (Black) -->
+  <path d="M40 100 L70 30 L100 80 L130 30 L160 100" 
+        stroke="#1a1a1a" stroke-width="24" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
+  <!-- V Chevron Shape (Green) -->
+  <path d="M70 120 L100 170 L130 120" 
+        stroke="#76c04b" stroke-width="24" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
 </svg>
