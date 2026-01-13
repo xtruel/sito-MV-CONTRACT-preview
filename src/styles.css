@@ -329,6 +329,12 @@ main {
   text-shadow: 0 0 12px var(--brand-glow);
 }
 
+.brand__legal {
+  font-size: 0.85em;
+  margin-left: 0.3em;
+  display: inline-block;
+}
+
 .nav {
   display: flex;
   align-items: center;
