@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- M Shape (Black) -->
+  <path d="M40 100 L70 30 L100 80 L130 30 L160 100" 
+        stroke="#1a1a1a" stroke-width="24" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
+  <!-- V Chevron Shape (Green) -->
+  <path d="M70 120 L100 170 L130 120" 
+        stroke="#76c04b" stroke-width="24" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
+</svg>

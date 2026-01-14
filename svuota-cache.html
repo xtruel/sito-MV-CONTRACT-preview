@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svuota Cache - MV Contract</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0ea5e9;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0ea5e9;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0284c7;
+        }
+
+        .steps {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        code {
+            background: #1e293b;
+            color: #10b981;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>🔄 Il sito è stato aggiornato!</h1>
+
+        <p><strong>Il problema:</strong> Il tuo browser sta mostrando la versione vecchia del sito (cache).</p>
+
+        <div class="steps">
+            <h3>✅ Soluzione GARANTITA:</h3>
+            <ol>
+                <li>Chiudi completamente il browser (Safari/Chrome)</li>
+                <li>Riapri il browser</li>
+                <li>Clicca il pulsante qui sotto:</li>
+            </ol>
+        </div>
+
+        <a href="#"
+            onclick="window.location.href='https://xtruel.github.io/sito-MV-CONTRACT-preview/?nocache=' + new Date().getTime(); return false;"
+            class="btn">
+            🚀 VAI AL SITO AGGIORNATO (FORZA RICARICA)
+        </a>
+
+        <div class="steps" style="margin-top: 30px; border-color: #3b82f6; background: #eff6ff;">
+            <h3>📱 Alternativa veloce:</h3>
+            <p>Apri una <strong>finestra Incognito</strong>:</p>
+            <ul>
+                <li><strong>Mac:</strong> Premi <code>Cmd + Shift + N</code></li>
+                <li><strong>Safari:</strong> Menu File → Nuova finestra privata</li>
+            </ul>
+            <p>Poi incolla questo link:</p>
+            <code
+                style="display: block; padding: 10px; margin: 10px 0;">https://xtruel.github.io/sito-MV-CONTRACT-preview/</code>
+        </div>
+
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #e5e7eb;">
+
+        <h3>✨ Cosa è stato aggiornato:</h3>
+        <ul>
+            <li>✅ Nuova Versione v2.1.2</li>
+            <li>✅ Logo solo grafico (senza testo)</li>
+            <li>✅ Bandiere per il cambio lingua</li>
+            <li>✅ Portfolio con loghi partner</li>
+            <li>✅ Slider con frecce di navigazione</li>
+            <li>✅ Nuova foto LS012 nello slider principale</li>
+        </ul>
+    </div>
+
+    <script>
+        // Force no-cache headers
+        if (performance.navigation.type === 1) {
+            console.log("Page was refreshed");
+        }
+    </script>
+</body>
+
+</html>
